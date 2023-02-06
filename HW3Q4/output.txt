@@ -1,0 +1,15 @@
+TCP: server open ---> connect with client ---> client sends message to server 
+            ---> server receives and sends back another messages 
+            ---> client receives and close (send close to server)
+            ---> server close.
+Create server (Bob) with g= 1907, p= 784313, SB= 12077.
+Create client (Alice) with g= 1907, p= 784313, SA= 160031.
+
+Client sends TA = g^SA mod p = 179464
+Server receives TA = 179464
+TA ^ SB mod p = 475269 which is equal to g^SASB mod p.
+
+Server sends TB = g^SB mod p = 449485
+Client receives TA = 449485
+TB ^ SA mod p = 475269 which is equal to g^SASB mod p.
+close server.
