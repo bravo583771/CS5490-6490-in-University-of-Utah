@@ -6,4 +6,5 @@ There are some other `README.md`s in each folder.
 # libraries and software versions:  
 python == 3.9.16  
 numpy == 1.23.5  
+sockets == 1.0.0  
 
